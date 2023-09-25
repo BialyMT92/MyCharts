@@ -1,0 +1,36 @@
+location: fdcl-ldz
+
+replicaCount: 2
+
+frontend:
+  image:
+    repository: bcr-de01.inside.bosch.cloud/bsh-gpd-global-production/fdcl_factory_view_frontend
+    tag: 0.0.2
+    pullPolicy: Always
+
+  service:
+    type: ClusterIP
+    port: 80
+
+  ingress:
+    enabled: true
+    path: /factory-view
+    host: fdcl.ldz
+    domain: .mes.bshg.com
+
+middleware:
+  image:
+    repository: bcr-de01.inside.bosch.cloud/bsh-gpd-global-production/fdcl_factory_view_middleware
+    tag: 0.0.2
+    pullPolicy: Always
+
+  storage:
+    enabled: true
+    size: 1Gi
+    class: ldw-gold
+
+backend:
+  image:
+    repository: bcr-de01.inside.bosch.cloud/bsh-gpd-global-production/fdcl_factory_view_backend
+    tag: 0.0.2
+    pullPolicy: Always

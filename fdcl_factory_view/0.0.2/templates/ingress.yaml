@@ -1,0 +1,23 @@
+{{- if .Values.frontend.ingress.enabled -}}
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name:  fdcl-factory-view-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
+spec:
+  tls:
+    - hosts:
+      - {{ .Values.frontend.ingress.host }}
+  rules:
+  - host: {{ .Values.frontend.ingress.host }}{{ .Values.frontend.ingress.domain }}
+    http:
+      paths:
+      - path: {{ .Values.frontend.ingress.path }}(/|$)(.*)
+        pathType: Prefix
+        backend:
+          service:
+            name:  fdcl-factory-view-svc
+            port:
+              number: 80
+{{- end }}

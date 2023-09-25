@@ -1,0 +1,68 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fdcl-factory-view
+spec:
+  replicas: {{ .Values.replicaCount }}
+  template:
+    metadata:
+      labels:
+        app: fdcl-factory-view
+    spec:
+      containers:
+      - name: fdcl-factory-view-frontend
+        image: "{{ .Values.frontend.image.repository }}:{{ .Values.frontend.image.tag }}"
+        ports:
+        - containerPort: 80
+        resources:
+          limits:
+            cpu: 300m
+            memory: 500Mi
+          requests:
+            cpu: 150m
+            memory: 300Mi
+        volumeMounts:
+        - name: data
+          mountPath: /frontend/data
+
+      - name: fdcl-factory-view-middleware
+        image: "{{ .Values.middleware.image.repository }}:{{ .Values.middleware.image.tag }}"
+        imagePullPolicy: { { .Values.middleware.image.pullPolicy } }
+        volumeMounts:
+          - name: data
+            mountPath: /mosquitto/data
+        env:
+        ports:
+          - containerPort: 9001
+        resources:
+          limits:
+            cpu: 100m
+            memory: 128Mi
+          requests:
+            cpu: 100m
+            memory: 128Mi
+
+      - name: fdcl-factory-view-backend
+        image: "{{ .Values.backend.image.repository }}:{{ .Values.backend.image.tag }}"
+        imagePullPolicy: { { .Values.backend.image.pullPolicy } }
+        volumeMounts:
+          - name: data
+            mountPath: /backend/data
+        env:
+        ports:
+        resources:
+          limits:
+            cpu: 100m
+            memory: 128Mi
+          requests:
+            cpu: 100m
+            memory: 128Mi
+
+      volumes:
+      - name: data
+        {{- if .Values.middleware.storage.enabled }}
+          persistentVolumeClaim:
+            claimName: fdcl-factory-view-pvc
+        {{- else }}
+          emptyDir: {}
+        {{- end }}

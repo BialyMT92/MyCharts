@@ -1,0 +1,19 @@
+categories:
+- connectivity
+questions:
+- variable: frontend.ingress.host
+  default: "fdcl.ldz"
+  description: "The host where the Service should run e.g. dctd-dil"
+  type: string
+  required: true
+  label: The host part of the address
+  show_subquestion_if: true
+  group: "settings"
+- variable: middleware.storage.class
+  default: "ldw-gold"
+  description: "which storage class should be used e.g. location-gold"
+  type: string
+  required: false
+  label: Storage class
+  show_subquestion_if: true
+  group: "settings"

@@ -1,0 +1,5 @@
+apiVersion: v1
+appVersion: "1.0"
+description: FDCL factoryView
+name: fdcl-factory-view
+version: 0.0.2

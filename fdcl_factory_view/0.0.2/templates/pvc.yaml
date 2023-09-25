@@ -1,0 +1,13 @@
+{{- if .Values.middleware.storage.enabled -}}
+frontend:
+  apiVersion: v1
+  kind: PersistentVolumeClaim
+  metadata:
+    name: fdcl-factory-view-pvc
+  spec:
+    accessModes:
+    - ReadWriteMany
+    resources:
+      requests:
+        storage: 1Gi
+    storageClassName:  {{ .Values.middleware.storage.class }}

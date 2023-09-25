@@ -1,0 +1,135 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="41">
+            <item index="0" class="java.lang.String" itemvalue="stylesheet" />
+            <item index="1" class="java.lang.String" itemvalue="fastapi" />
+            <item index="2" class="java.lang.String" itemvalue="src" />
+            <item index="3" class="java.lang.String" itemvalue="[(ngmodel)]" />
+            <item index="4" class="java.lang.String" itemvalue="bciprimarybutton" />
+            <item index="5" class="java.lang.String" itemvalue="[cdkdragstartdelay]" />
+            <item index="6" class="java.lang.String" itemvalue="cdkdrag" />
+            <item index="7" class="java.lang.String" itemvalue="cdkdrop" />
+            <item index="8" class="java.lang.String" itemvalue="(cdkdragended)" />
+            <item index="9" class="java.lang.String" itemvalue="*ngfor" />
+            <item index="10" class="java.lang.String" itemvalue="(cdkdroplistdropped)" />
+            <item index="11" class="java.lang.String" itemvalue="#tooltip" />
+            <item index="12" class="java.lang.String" itemvalue="[mattooltipclass]" />
+            <item index="13" class="java.lang.String" itemvalue="[mattooltipdisabled]" />
+            <item index="14" class="java.lang.String" itemvalue="[mattooltiphidedelay]" />
+            <item index="15" class="java.lang.String" itemvalue="[mattooltipposition]" />
+            <item index="16" class="java.lang.String" itemvalue="[mattooltipshowdelay]" />
+            <item index="17" class="java.lang.String" itemvalue="[mattooltip]" />
+            <item index="18" class="java.lang.String" itemvalue="[ngclass]" />
+            <item index="19" class="java.lang.String" itemvalue="[ngstyle]" />
+            <item index="20" class="java.lang.String" itemvalue="ng-href" />
+            <item index="21" class="java.lang.String" itemvalue="[attr.xlink:href]" />
+            <item index="22" class="java.lang.String" itemvalue="[bcicontentfullscreen]" />
+            <item index="23" class="java.lang.String" itemvalue="(change)" />
+            <item index="24" class="java.lang.String" itemvalue="matinput" />
+            <item index="25" class="java.lang.String" itemvalue="[value]" />
+            <item index="26" class="java.lang.String" itemvalue="mat-raised-button" />
+            <item index="27" class="java.lang.String" itemvalue="color" />
+            <item index="28" class="java.lang.String" itemvalue="(click)" />
+            <item index="29" class="java.lang.String" itemvalue="*ngif" />
+            <item index="30" class="java.lang.String" itemvalue="rel" />
+            <item index="31" class="java.lang.String" itemvalue="[style.visibility]" />
+            <item index="32" class="java.lang.String" itemvalue="[hidden]" />
+            <item index="33" class="java.lang.String" itemvalue="[formgroup]" />
+            <item index="34" class="java.lang.String" itemvalue="formcontrolname" />
+            <item index="35" class="java.lang.String" itemvalue="[disabled]" />
+            <item index="36" class="java.lang.String" itemvalue="[routerlink]" />
+            <item index="37" class="java.lang.String" itemvalue="bcisecondarybutton" />
+            <item index="38" class="java.lang.String" itemvalue="mat-icon-button" />
+            <item index="39" class="java.lang.String" itemvalue="matsuffix" />
+            <item index="40" class="java.lang.String" itemvalue="matline" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="51">
+            <item index="0" class="java.lang.String" itemvalue="nobr" />
+            <item index="1" class="java.lang.String" itemvalue="noembed" />
+            <item index="2" class="java.lang.String" itemvalue="comment" />
+            <item index="3" class="java.lang.String" itemvalue="noscript" />
+            <item index="4" class="java.lang.String" itemvalue="embed" />
+            <item index="5" class="java.lang.String" itemvalue="script" />
+            <item index="6" class="java.lang.String" itemvalue="bci-page-content" />
+            <item index="7" class="java.lang.String" itemvalue="mat-slider" />
+            <item index="8" class="java.lang.String" itemvalue="bci-circular-gauge" />
+            <item index="9" class="java.lang.String" itemvalue="mat-button-toggle-group" />
+            <item index="10" class="java.lang.String" itemvalue="mat-button-toggle" />
+            <item index="11" class="java.lang.String" itemvalue="bci-commandbar" />
+            <item index="12" class="java.lang.String" itemvalue="bci-commandbar-item" />
+            <item index="13" class="java.lang.String" itemvalue="bci-commandbar-quickfilters" />
+            <item index="14" class="java.lang.String" itemvalue="mat-slide-toggle" />
+            <item index="15" class="java.lang.String" itemvalue="bci-app" />
+            <item index="16" class="java.lang.String" itemvalue="router-outlet" />
+            <item index="17" class="java.lang.String" itemvalue="div" />
+            <item index="18" class="java.lang.String" itemvalue="pan-zoom" />
+            <item index="19" class="java.lang.String" itemvalue="bci-overview-tile" />
+            <item index="20" class="java.lang.String" itemvalue="app-root" />
+            <item index="21" class="java.lang.String" itemvalue="span" />
+            <item index="22" class="java.lang.String" itemvalue="img" />
+            <item index="23" class="java.lang.String" itemvalue="ul" />
+            <item index="24" class="java.lang.String" itemvalue="tspan" />
+            <item index="25" class="java.lang.String" itemvalue="mat-icon" />
+            <item index="26" class="java.lang.String" itemvalue="mat-form-field" />
+            <item index="27" class="java.lang.String" itemvalue="mat-label" />
+            <item index="28" class="java.lang.String" itemvalue="mat-grid-tile" />
+            <item index="29" class="java.lang.String" itemvalue="mat-grid-list" />
+            <item index="30" class="java.lang.String" itemvalue="mat-card" />
+            <item index="31" class="java.lang.String" itemvalue="mat-select" />
+            <item index="32" class="java.lang.String" itemvalue="mat-option" />
+            <item index="33" class="java.lang.String" itemvalue="mat-spinner" />
+            <item index="34" class="java.lang.String" itemvalue="h5" />
+            <item index="35" class="java.lang.String" itemvalue="p" />
+            <item index="36" class="java.lang.String" itemvalue="mat-tab-group" />
+            <item index="37" class="java.lang.String" itemvalue="mat-tab" />
+            <item index="38" class="java.lang.String" itemvalue="ng-template" />
+            <item index="39" class="java.lang.String" itemvalue="ng-container" />
+            <item index="40" class="java.lang.String" itemvalue="mat-card-title" />
+            <item index="41" class="java.lang.String" itemvalue="mat-card-actions" />
+            <item index="42" class="java.lang.String" itemvalue="mat-card-content" />
+            <item index="43" class="java.lang.String" itemvalue="bci-master-detail-view" />
+            <item index="44" class="java.lang.String" itemvalue="bci-detail-view" />
+            <item index="45" class="java.lang.String" itemvalue="bci-tiles-skeleton" />
+            <item index="46" class="java.lang.String" itemvalue="bci-master-view" />
+            <item index="47" class="java.lang.String" itemvalue="bci-tile" />
+            <item index="48" class="java.lang.String" itemvalue="mat-list" />
+            <item index="49" class="java.lang.String" itemvalue="mat-list-item" />
+            <item index="50" class="java.lang.String" itemvalue="bci-list-skeleton" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N802" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnreachableCodeInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="list.title" />
+          <option value="pandas" />
+          <option value="bool.all" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="RequiredAttributes" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myAdditionalRequiredHtmlAttributes" value="r" />
+    </inspection_tool>
+  </profile>
+</component>

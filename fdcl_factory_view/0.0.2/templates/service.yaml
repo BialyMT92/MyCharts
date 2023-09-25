@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: fdcl-factory-view-svc
+spec:
+  selector:
+    app: fdcl-factory-view
+  type: ClusterIP
+  ports:
+  - name: http
+    port: 80
+    targetPort: 80
+    protocol: TCP
+  - name: mqtt
+    port: 9001
+    targetPort: 9001
+    protocol: TCP
